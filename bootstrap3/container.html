@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<title>Bootstrap Example</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="styleshee" href="css/tonaise.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="js/tonaise.js"></script>
+</head>
+
+<body style="padding-top: 70px;">
+
+	<div class="container">
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="#" class="navbar-brand">menu</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="#">Home</a>
+						</li>
+						<li>
+							<a href="#">Page 1</a>
+						</li>
+						<li>
+							<a href="#">Page 2</a>
+						</li>
+						<li>
+							<a href="#">Page 3</a>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="#">
+								<span class="glyphicon glyphicon-user">Sign in</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="glyphicon glyphicon-log-in">Logout</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div>
+			<a href="#">お知らせ
+				<span class="badge">3</span>
+			</a>
+		</div>
+		<div class="jumbotron">
+			<h1>Bootstrap3のお試し。こちらはjumbotronです。</h1>
+		</div>
+		<div class="alert alert-success alert-dismissable alerthoge">
+			<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>successメッセージ
+		</div>
+		<div class="alert alert-info alert-dismissable hoge">
+			<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>infoメッセージ
+		</div>
+		<div class="alert alert-warning alert-dismissable">
+			<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>warningメッセージ
+		</div>
+		<div class="alert alert-danger alert-dismissable">
+			<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>dangeerメッセージ
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#demoa">開く</button>
+				<div id="demoa" class="collapse">
+					<form class="form-horizontal">
+						<div class="form-group">
+							<label class="control-label col-sm-2" for="username">氏名：</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" data-toggle="tooltip" title="氏名" placeholder=" 氏名 ">
+							</div>
+						</div>
+						<div class="form-group ">
+							<label class="control-label col-sm-2 " for="username ">Email：</label>
+							<div class="col-sm-10 ">
+								<input type="email " class="form-control " placeholder="Email ">
+							</div>
+						</div>
+						<div class="form-group ">
+							<label class="control-label col-sm-2 " for="username ">性別：</label>
+							<div class="col-sm-10 ">
+								<div class="radio ">
+									<label>
+										<input type="radio " name="sex ">男性</label>
+								</div>
+								<div class="radio ">
+									<label>
+										<input type="radio " name="sex ">女性</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-group ">
+							<div class="col-sm-offset-2 col-sm-10 ">
+								<div class="checkbox ">
+									<label>
+										<input type="checkbox ">個人情報利用同意</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-group ">
+							<div class="col-sm-offset-2 col-sm-10 ">
+								<button type="submit " class="btn btn-default ">登録</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-12 ">
+			<button class="btn btn-primary btn-sm ">
+				検索
+				<span class="glyphicon glyphicon-search "></span>
+			</button>
+		</div>
+		<div class="col-md-12 ">
+			<ul class="pagination ">
+				<li>
+					<a href="# ">1</a>
+				</li>
+				<li>
+					<a href="# ">2</a>
+				</li>
+				<li>
+					<a href="# ">3</a>
+				</li>
+				<li>
+					<a href="# ">4</a>
+				</li>
+				<li>
+					<a href="# ">5</a>
+				</li>
+			</ul>
+			<table class="table table-bordered table-hover table-condensed table-responsive ">
+				<thead>
+					<tr>
+						<th>色</th>
+						<th>名字</th>
+						<th>名前</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="success ">
+						<td>success</td>
+						<td>山田</td>
+						<td>太郎</td>
+					</tr>
+					<tr class="info ">
+						<td>info</td>
+						<td>山田</td>
+						<td>花子</td>
+					</tr>
+					<tr class="warning ">
+						<td>warning</td>
+						<td>山田</td>
+						<td>太郎</td>
+					</tr>
+					<tr class="danger ">
+						<td>danger</td>
+						<td>山田</td>
+						<td>花子</td>
+					</tr>
+					<tr class="active ">
+						<td>active</td>
+						<td>山田</td>
+						<td>太郎</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+</body>
+
+</html>
